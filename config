@@ -11,6 +11,8 @@
 
 #disable (hide) titlebar
 for_window [class="^.*"] border pixel 1
+gaps inner 5
+gaps outer 5
 
 set $mod Mod4
 
@@ -174,3 +176,6 @@ for_window [class="jetbrains-idea"] floating enable
 bar {
         status_command i3status
 }
+
+# wallpaper
+exec_always feh --bg-scale --randomize /home/pusilas/.config/i3/wallpapers
